@@ -11,19 +11,19 @@ class Human {
 
     canVote() {
         if(this.age >= 18) {
-            console.log(true) 
+           return true  
         } else {
-            console.log(false)
+           return false
         }
     }
 
-    mostSkilledDev = (objectOne, objectTwo) => {
-        if(objectOne.language.length > objectTwo.language.length) {
-            console.log(`${objectOne.firstName} knows more languages than ${objectTwo.firstName}`)
-        } else if (objectOne.language.length === objectTwo.language.length) {
+    mostSkilledDev = (person) => {
+        if(this.language.length > person.language.length) {
+            console.log(`${this.firstName} knows more languages than ${person.firstName}`)
+        } else if (this.language.length === person.language.length) {
             console.log(`It's a draw`)
         } else {
-            console.log(`${objectTwo.firstName} knows more languages than ${objectOne.firstName}`)
+            console.log(`${this.firstName} knows more languages than ${person.firstName}`)
         }
     }
 }
